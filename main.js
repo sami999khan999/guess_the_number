@@ -28,7 +28,6 @@ let HIGH_SCORE = 0;
 //============================================================================================================================================//
 
 // // checking
-
 function displayGuessingText(text) {
   guessingText.textContent = text;
 }
@@ -92,8 +91,9 @@ check.addEventListener("click", function () {
   input.value = "";
 });
 
-// // play again
+//============================================================================================================================================//
 
+// // play again
 playAgain.addEventListener("click", function () {
   SECRET_NUMBER = Math.trunc(Math.random() * 20 + 1);
   SCORE = 20;
