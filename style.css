@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  font-size: 2rem;
+  overflow: hidden;
+  background-color: #46494d;
+  color: #d1d0c5;
+}
+
+.btn {
+  font-family: inherit;
+  background: transparent;
+  border: 1px solid #d1d0c5;
+  color: #d1d0c5;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #5c9a78;
+  color: #f6f6f2;
+}
+
+.game-screen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-around;
+  gap: 60rem;
+}
+
+.between {
+  font-weight: bold;
+}
+
+.game-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.game-instruction {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.game-correct-ans {
+  background-color: #3b8d60;
+  height: 8rem;
+  width: 13rem;
+  border-radius: 60px;
+  align-self: center;
+  display: grid;
+  place-items: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  z-index: 1;
+  box-shadow: 1px 69px 196px -17px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 69px 196px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 69px 196px -17px rgba(0, 0, 0, 0.75);
+}
+
+.border {
+  border: 18px solid #408961;
+  margin-top: -12rem;
+  border-radius: 50%;
+  width: 96.2vw;
+  z-index: 0;
+  box-shadow: 1px 17px 138px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 17px 138px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 17px 138px -3px rgba(0, 0, 0, 0.75);
+}
+
+.game-guess-screen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 8rem;
+}
+
+.input-number {
+  font-size: 3.5rem;
+  max-width: 14rem;
+  font-family: inherit;
+  color: #d1d0c5;
+  font-weight: bold;
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border: 2px solid #d1d0c5;
+}
+
+.check {
+  width: 10rem;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.score-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 8rem;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+.score-screen p {
+  font-size: 2.4rem;
+}
+
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
